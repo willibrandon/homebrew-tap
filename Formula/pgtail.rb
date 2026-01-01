@@ -15,7 +15,7 @@ class Pgtail < Formula
     end
     on_intel do
       url "https://github.com/willibrandon/pgtail/releases/download/v#{version}/pgtail-macos-x86_64"
-      sha256 "PLACEHOLDER_SHA256_MACOS_X86_64"
+      sha256 "48c8eefe5b0ff39b5997cea8cf92dfebf606bd31f47f5580ea296bacd00d0922"
     end
   end
 
@@ -26,7 +26,7 @@ class Pgtail < Formula
     end
     on_intel do
       url "https://github.com/willibrandon/pgtail/releases/download/v#{version}/pgtail-linux-x86_64"
-      sha256 "PLACEHOLDER_SHA256_LINUX_X86_64"
+      sha256 "1b8a06c3d0d16146ec1bbc8baf7e6b32a3ec798591699c1ebf97b3bd72fa61c4"
     end
   end
 
