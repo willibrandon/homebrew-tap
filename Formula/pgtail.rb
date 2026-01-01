@@ -11,22 +11,22 @@ class Pgtail < Formula
   on_macos do
     on_arm do
       url "https://github.com/willibrandon/pgtail/releases/download/v#{version}/pgtail-macos-arm64"
-      sha256 "15eba6b260d80d7fb5f160dfbf48ca1d8656f5886b57d403fb53e3474eefb5a1"
+      sha256 "21d922f0126d76577e2de914ad3a295f61e0a26bb93c3e3030182365e6723898"
     end
     on_intel do
       url "https://github.com/willibrandon/pgtail/releases/download/v#{version}/pgtail-macos-x86_64"
-      sha256 "ffe0632e03d588008afa36193a34f96afaa3479680d8451c23181f14245a1613"
+      sha256 "0114719879e76ad3724d26469766d7e4a93208886fdf2ebbb045b7df8c4bd53e"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/willibrandon/pgtail/releases/download/v#{version}/pgtail-linux-arm64"
-      sha256 "338ff0dbc828909f99aeecc1803eef5f2c201915b1c126d86930ed9858de6e70"
+      sha256 "6064d4f685c6b97050a48336f4020939d3ba3559b92093b7813c7810a1baa214"
     end
     on_intel do
       url "https://github.com/willibrandon/pgtail/releases/download/v#{version}/pgtail-linux-x86_64"
-      sha256 "3076f7614992e3433513bb14c9cce897e5bf06a127685f675ba5c44c8e209d31"
+      sha256 "e82cafedc037e4b50f7435126f9569c5a7d9edf1d8f56aad972eb58876162b9d"
     end
   end
 
