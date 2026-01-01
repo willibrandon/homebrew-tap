@@ -6,7 +6,7 @@ class Pgtail < Formula
   desc "Interactive PostgreSQL log tailer with auto-detection and color output"
   homepage "https://github.com/willibrandon/pgtail"
   license "MIT"
-  version "0.2.0-rc1"
+  version "0.2.0-rc2"
 
   on_macos do
     on_arm do
