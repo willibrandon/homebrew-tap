@@ -7,27 +7,27 @@ class Pgtail < Formula
   desc "Interactive PostgreSQL log tailer with auto-detection and color output"
   homepage "https://github.com/willibrandon/pgtail"
   license "MIT"
-  version "0.2.1"
+  version "0.2.2-rc1"
 
   on_macos do
     on_arm do
       url "https://github.com/willibrandon/pgtail/releases/download/v#{version}/pgtail-macos-arm64.tar.gz"
-      sha256 "57dcd3aea737b9171b0716f1e0100dcc7e947bbfc7b77c775ef9bda8fc17c8cf"
+      sha256 "01642431f608a017bc62522bda695b10e742795d2baaaad62a50b4b6e64a5f0a"
     end
     on_intel do
       url "https://github.com/willibrandon/pgtail/releases/download/v#{version}/pgtail-macos-x86_64.tar.gz"
-      sha256 "b228ad851f2fdc919978d7eb0a7333c9921b7533ec91f8fd9c7f3e1a133aff83"
+      sha256 "5a6307fdff6018413a726e0440111628aa10add4b3be7ee496b87fbd77f26b15"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/willibrandon/pgtail/releases/download/v#{version}/pgtail-linux-arm64.tar.gz"
-      sha256 "cbe1acf9dd8dc36fddf5460394d1bcbf54d60797776cb74ecaa747a705999693"
+      sha256 "b90e4ee1972f84910b5559e3017583a6c2c3c97cd94089362a2df72ede6f63b5"
     end
     on_intel do
       url "https://github.com/willibrandon/pgtail/releases/download/v#{version}/pgtail-linux-x86_64.tar.gz"
-      sha256 "ac788d6798f7ceef78c37172d215172c71f3411a996ba13b0a6153a2875f3acc"
+      sha256 "583829b3ba61a115c7631d0321d16466fce9f5173afdf1066cf3ec82bced9572"
     end
   end
 
