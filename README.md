@@ -7,6 +7,7 @@ This tap provides Homebrew formulae for tools by [willibrandon](https://github.c
 | Formula | Description |
 |---------|-------------|
 | [dotsider](https://github.com/willibrandon/dotsider) | A TUI for analyzing .NET assemblies |
+| [dotsider-mcp](https://github.com/willibrandon/dotsider) | MCP server for AI-assisted .NET assembly analysis |
 | [pgtail](https://github.com/willibrandon/pgtail) | Interactive PostgreSQL log tailer with auto-detection and color output |
 
 ## Installation
@@ -14,6 +15,7 @@ This tap provides Homebrew formulae for tools by [willibrandon](https://github.c
 ```bash
 brew tap willibrandon/tap
 brew install dotsider
+brew install dotsider-mcp
 brew install pgtail
 ```
 
@@ -21,6 +23,7 @@ Or install directly:
 
 ```bash
 brew install willibrandon/tap/dotsider
+brew install willibrandon/tap/dotsider-mcp
 brew install willibrandon/tap/pgtail
 ```
 
@@ -28,6 +31,7 @@ brew install willibrandon/tap/pgtail
 
 ```bash
 brew upgrade dotsider
+brew upgrade dotsider-mcp
 brew upgrade pgtail
 ```
 
@@ -40,6 +44,14 @@ brew upgrade pgtail
 | macOS | Apple Silicon (arm64) | dotsider-osx-arm64 |
 | Linux | arm64 | dotsider-linux-arm64 |
 | Linux | x86_64 | dotsider-linux-x64 |
+
+### dotsider-mcp
+
+| Platform | Architecture | Binary |
+|----------|--------------|--------|
+| macOS | Apple Silicon (arm64) | dotsider-mcp-osx-arm64 |
+| Linux | arm64 | dotsider-mcp-linux-arm64 |
+| Linux | x86_64 | dotsider-mcp-linux-x64 |
 
 ### pgtail
 
@@ -58,6 +70,7 @@ If you see "cannot be opened because the developer cannot be verified":
 
 ```bash
 xattr -d com.apple.quarantine $(which dotsider)
+xattr -d com.apple.quarantine $(which dotsider-mcp)
 xattr -d com.apple.quarantine $(which pgtail)
 ```
 
