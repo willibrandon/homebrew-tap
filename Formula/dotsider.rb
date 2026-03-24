@@ -6,23 +6,23 @@ class Dotsider < Formula
   desc "A TUI for analyzing .NET assemblies"
   homepage "https://github.com/willibrandon/dotsider"
   license "MIT"
-  version "0.6.0"
+  version "0.6.1"
 
   on_macos do
     on_arm do
       url "https://github.com/willibrandon/dotsider/releases/download/v#{version}/dotsider-osx-arm64.tar.gz"
-      sha256 "857b025aab9566b7856cbc8b740b887d87ffc4a09037e05a55a7b38e12a9257d"
+      sha256 "19e274ffdfed9245d060c1b6ec20dd96a0ab1934e8188c5c5b5037fe5f624699"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/willibrandon/dotsider/releases/download/v#{version}/dotsider-linux-arm64.tar.gz"
-      sha256 "4165b887f0962827a89b9f08e8be940ae924460efe4eb4ada1c24d9ad6281690"
+      sha256 "2bd1eeb02097bcc6dd5e7f7cf86f6d75fbbd72fbd6e2047538b36814c7183b33"
     end
     on_intel do
       url "https://github.com/willibrandon/dotsider/releases/download/v#{version}/dotsider-linux-x64.tar.gz"
-      sha256 "5a2beb71c63a29c22b802a7944ca618fab06619b071e7b79e39ff0a691021869"
+      sha256 "7d74f7104f66ccef8a1be7cc6d34f4f950da56de3680c5a01e87809d80b92690"
     end
   end
 
