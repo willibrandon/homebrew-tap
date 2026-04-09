@@ -6,23 +6,23 @@ class DotsiderMcp < Formula
   desc "MCP server for AI-assisted .NET assembly analysis"
   homepage "https://github.com/willibrandon/dotsider"
   license "MIT"
-  version "0.10.0"
+  version "0.11.0"
 
   on_macos do
     on_arm do
       url "https://github.com/willibrandon/dotsider/releases/download/v#{version}/dotsider-mcp-osx-arm64.tar.gz"
-      sha256 "50110fe6467c427e40c33f2f8768ea24de2f5d447b87e4933fb4d7170e173cdd"
+      sha256 "88bf018bc73a8a7c4d594a1390c121a4bb4a3a6e9446e68b264dae8864e81492"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/willibrandon/dotsider/releases/download/v#{version}/dotsider-mcp-linux-arm64.tar.gz"
-      sha256 "9e719efc4a3afca856132ea90a5456720fa7b98fe61b5b44df74197a181d0982"
+      sha256 "a18cbab8d9c2e739f2aa7226b04b1dff63f6d490ca0be5b3b6ac775ee973dbca"
     end
     on_intel do
       url "https://github.com/willibrandon/dotsider/releases/download/v#{version}/dotsider-mcp-linux-x64.tar.gz"
-      sha256 "d428f95b39104043ac049c63d050c86fc92efdd974f4abc65dcdf9c692d8eda7"
+      sha256 "46e5435e7eb7c7ab7fdbf2a0a5d2f03b2b7703c1b6bba645acc59aa873ddb09a"
     end
   end
 
