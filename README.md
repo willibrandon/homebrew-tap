@@ -6,6 +6,7 @@ This tap provides Homebrew formulae for tools by [willibrandon](https://github.c
 
 | Formula | Description |
 |---------|-------------|
+| [scout](https://github.com/willibrandon/scout) | Feature-complete port of ripgrep to .NET Native AOT |
 | [dotsider](https://github.com/willibrandon/dotsider) | A TUI for analyzing .NET assemblies |
 | [dotsider-mcp](https://github.com/willibrandon/dotsider) | MCP server for AI-assisted .NET assembly analysis |
 | [pgtail](https://github.com/willibrandon/pgtail) | Interactive PostgreSQL log tailer with auto-detection and color output |
@@ -14,6 +15,7 @@ This tap provides Homebrew formulae for tools by [willibrandon](https://github.c
 
 ```bash
 brew tap willibrandon/tap
+brew install scout
 brew install dotsider
 brew install dotsider-mcp
 brew install pgtail
@@ -22,6 +24,7 @@ brew install pgtail
 Or install directly:
 
 ```bash
+brew install willibrandon/tap/scout
 brew install willibrandon/tap/dotsider
 brew install willibrandon/tap/dotsider-mcp
 brew install willibrandon/tap/pgtail
@@ -30,12 +33,22 @@ brew install willibrandon/tap/pgtail
 ## Upgrade
 
 ```bash
+brew upgrade scout
 brew upgrade dotsider
 brew upgrade dotsider-mcp
 brew upgrade pgtail
 ```
 
 ## Supported Platforms
+
+### scout
+
+| Platform | Architecture | Binary |
+|----------|--------------|--------|
+| macOS | Apple Silicon (arm64) | scout-osx-arm64 |
+| macOS | Intel (x86_64) | scout-osx-x64 |
+| Linux | arm64 | scout-linux-arm64 |
+| Linux | x86_64 | scout-linux-x64 |
 
 ### dotsider
 
@@ -69,6 +82,7 @@ brew upgrade pgtail
 If you see "cannot be opened because the developer cannot be verified":
 
 ```bash
+xattr -d com.apple.quarantine $(which scout)
 xattr -d com.apple.quarantine $(which dotsider)
 xattr -d com.apple.quarantine $(which dotsider-mcp)
 xattr -d com.apple.quarantine $(which pgtail)
@@ -77,5 +91,6 @@ xattr -d com.apple.quarantine $(which pgtail)
 ### Formula Issues
 
 To report issues with this tap, please open an issue on the relevant repository:
+- [scout issues](https://github.com/willibrandon/scout/issues)
 - [dotsider issues](https://github.com/willibrandon/dotsider/issues)
 - [pgtail issues](https://github.com/willibrandon/pgtail/issues)
