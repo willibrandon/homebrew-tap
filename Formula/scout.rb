@@ -6,27 +6,27 @@ class Scout < Formula
   desc "Feature-complete port of ripgrep to .NET Native AOT"
   homepage "https://github.com/willibrandon/scout"
   license "MIT"
-  version "0.1.3"
+  version "0.2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/willibrandon/scout/releases/download/v#{version}/scout-osx-arm64.tar.gz"
-      sha256 "ab49a48bafbac873015935674284d4cf1c0fe3603bb821cf2e3fc6258b31b779"
+      sha256 "28344993732f89987742fd82c992a68c3b84f15d36b8e3ac5122288e59ee5056"
     end
     on_intel do
       url "https://github.com/willibrandon/scout/releases/download/v#{version}/scout-osx-x64.tar.gz"
-      sha256 "bf59aeedef31c6d44ef18040ff3db0137fd0ad5c6db6844e24756b86df45e230"
+      sha256 "e6372648aed03d0c5af757c241479a912aeb8eb721a6a7c3cfaca46708110310"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/willibrandon/scout/releases/download/v#{version}/scout-linux-arm64.tar.gz"
-      sha256 "4c2772bac518f9f4db827ccf1311c808373a66d304c789250539ff55983ee50b"
+      sha256 "2b55563384cb9bb3b7e8d45859c80a33da8756678c5f1f9e8e562e100d3ff294"
     end
     on_intel do
       url "https://github.com/willibrandon/scout/releases/download/v#{version}/scout-linux-x64.tar.gz"
-      sha256 "24ef9f85cf8998908bb7e171deacfe48bd638135531669845da0faafe5a68ff4"
+      sha256 "193552d9af722322bd6e57b20282ba2cba457c02d161cb36e363d0b4d07947d8"
     end
   end
 
