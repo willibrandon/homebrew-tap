@@ -4,28 +4,28 @@
 class Picket < Formula
   desc "Native AOT secrets scanner with Gitleaks-compatible and Picket-native modes"
   homepage "https://github.com/willibrandon/picket"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/willibrandon/picket/releases/download/v0.1.7/picket-v0.1.7-osx-arm64.tar.gz"
-      sha256 "9233b520bcb092f1c6e6d634a46f1bbeb3a5ba18032362c6af3b852a60e16d4f"
+      url "https://github.com/willibrandon/picket/releases/download/v0.1.8/picket-v0.1.8-osx-arm64.tar.gz"
+      sha256 "28976f9de022847e562e7a0fdde0c924f791109f30c0ba28ae795cbaec352006"
     end
     on_intel do
-      url "https://github.com/willibrandon/picket/releases/download/v0.1.7/picket-v0.1.7-osx-x64.tar.gz"
-      sha256 "c471b4cf5c65328e0835ad2035b102d7a43369b7c9c357927092e9ee1f7e829d"
+      url "https://github.com/willibrandon/picket/releases/download/v0.1.8/picket-v0.1.8-osx-x64.tar.gz"
+      sha256 "518458e0aaeae731bc73ca6f5405b0fb97148f0368b0364f20802493ef5c0f36"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/willibrandon/picket/releases/download/v0.1.7/picket-v0.1.7-linux-arm64.tar.gz"
-      sha256 "dca2926e6e832270a6bbe71ec38776326e7d6e54beb57bdee7046670d1bda7ae"
+      url "https://github.com/willibrandon/picket/releases/download/v0.1.8/picket-v0.1.8-linux-arm64.tar.gz"
+      sha256 "2e9a3943cde39e194bfcc5fbbfda83e2f2b59f4279a3bdcae78b661feb4fbf05"
     end
     on_intel do
-      url "https://github.com/willibrandon/picket/releases/download/v0.1.7/picket-v0.1.7-linux-x64.tar.gz"
-      sha256 "33adc62ec8b5cf1b426c1453b41143c62939d19588312c78c2cd47206be45a8f"
+      url "https://github.com/willibrandon/picket/releases/download/v0.1.8/picket-v0.1.8-linux-x64.tar.gz"
+      sha256 "1cb59c8ec59d5780e6897e04cb0dd82001fb3456dc2916048b173196c1d3ee0b"
     end
   end
 
