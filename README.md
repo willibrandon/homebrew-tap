@@ -6,6 +6,7 @@ This tap provides Homebrew formulae for tools by [willibrandon](https://github.c
 
 | Formula | Description |
 |---------|-------------|
+| [picket](https://github.com/willibrandon/picket) | Native AOT secrets scanner |
 | [scout](https://github.com/willibrandon/scout) | Feature-complete port of ripgrep to .NET Native AOT |
 | [dotsider](https://github.com/willibrandon/dotsider) | A TUI for analyzing .NET assemblies |
 | [dotsider-mcp](https://github.com/willibrandon/dotsider) | MCP server for AI-assisted .NET assembly analysis |
@@ -15,6 +16,7 @@ This tap provides Homebrew formulae for tools by [willibrandon](https://github.c
 
 ```bash
 brew tap willibrandon/tap
+brew install picket
 brew install scout
 brew install dotsider
 brew install dotsider-mcp
@@ -24,6 +26,7 @@ brew install pgtail
 Or install directly:
 
 ```bash
+brew install willibrandon/tap/picket
 brew install willibrandon/tap/scout
 brew install willibrandon/tap/dotsider
 brew install willibrandon/tap/dotsider-mcp
@@ -33,6 +36,7 @@ brew install willibrandon/tap/pgtail
 ## Upgrade
 
 ```bash
+brew upgrade picket
 brew upgrade scout
 brew upgrade dotsider
 brew upgrade dotsider-mcp
@@ -40,6 +44,15 @@ brew upgrade pgtail
 ```
 
 ## Supported Platforms
+
+### picket
+
+| Platform | Architecture | Binaries |
+|----------|--------------|----------|
+| macOS | Apple Silicon (arm64) | picket, picket-tui |
+| macOS | Intel (x86_64) | picket, picket-tui |
+| Linux | arm64 | picket, picket-tui |
+| Linux | x86_64 | picket, picket-tui |
 
 ### scout
 
@@ -82,6 +95,8 @@ brew upgrade pgtail
 If you see "cannot be opened because the developer cannot be verified":
 
 ```bash
+xattr -d com.apple.quarantine $(which picket)
+xattr -d com.apple.quarantine $(which picket-tui)
 xattr -d com.apple.quarantine $(which scout)
 xattr -d com.apple.quarantine $(which dotsider)
 xattr -d com.apple.quarantine $(which dotsider-mcp)
@@ -91,6 +106,7 @@ xattr -d com.apple.quarantine $(which pgtail)
 ### Formula Issues
 
 To report issues with this tap, please open an issue on the relevant repository:
+- [picket issues](https://github.com/willibrandon/picket/issues)
 - [scout issues](https://github.com/willibrandon/scout/issues)
 - [dotsider issues](https://github.com/willibrandon/dotsider/issues)
 - [pgtail issues](https://github.com/willibrandon/pgtail/issues)
