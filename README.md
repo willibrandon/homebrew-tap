@@ -68,6 +68,7 @@ brew upgrade pgtail
 | Platform | Architecture | Binary |
 |----------|--------------|--------|
 | macOS | Apple Silicon (arm64) | dotsider-osx-arm64 |
+| macOS | Intel (x86_64) | dotsider-osx-x64 |
 | Linux | arm64 | dotsider-linux-arm64 |
 | Linux | x86_64 | dotsider-linux-x64 |
 
@@ -76,6 +77,7 @@ brew upgrade pgtail
 | Platform | Architecture | Binary |
 |----------|--------------|--------|
 | macOS | Apple Silicon (arm64) | dotsider-mcp-osx-arm64 |
+| macOS | Intel (x86_64) | dotsider-mcp-osx-x64 |
 | Linux | arm64 | dotsider-mcp-linux-arm64 |
 | Linux | x86_64 | dotsider-mcp-linux-x64 |
 

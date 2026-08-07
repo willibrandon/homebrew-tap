@@ -13,6 +13,10 @@ class DotsiderMcp < Formula
       url "https://github.com/willibrandon/dotsider/releases/download/v#{version}/dotsider-mcp-osx-arm64.tar.gz"
       sha256 "9bb54ed6abcd960b04555636a94225631001d3b67a8c53d3fe697f554d8efb12"
     end
+    on_intel do
+      url "https://github.com/willibrandon/dotsider/releases/download/v#{version}/dotsider-mcp-osx-x64.tar.gz"
+      sha256 "ecd980c0eaa0c4fd8f8b3aa3d30bd9f215bfca5b7e32f416f88d8e07b1961199"
+    end
   end
 
   on_linux do

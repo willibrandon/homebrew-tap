@@ -13,6 +13,10 @@ class Dotsider < Formula
       url "https://github.com/willibrandon/dotsider/releases/download/v#{version}/dotsider-osx-arm64.tar.gz"
       sha256 "6e8652580b9c04e353c36d75d562601e3fd71c41a844cead31ef5f0138c7494a"
     end
+    on_intel do
+      url "https://github.com/willibrandon/dotsider/releases/download/v#{version}/dotsider-osx-x64.tar.gz"
+      sha256 "0b654110e43c11204903f6d0a12878db3409cb5c9a9260396152f71ce6550670"
+    end
   end
 
   on_linux do
