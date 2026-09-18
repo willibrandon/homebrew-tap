@@ -11,6 +11,7 @@ This tap provides Homebrew formulae for tools by [willibrandon](https://github.c
 | [dotsider](https://github.com/willibrandon/dotsider) | A TUI for analyzing .NET assemblies |
 | [dotsider-mcp](https://github.com/willibrandon/dotsider) | MCP server for AI-assisted .NET assembly analysis |
 | [pgtail](https://github.com/willibrandon/pgtail) | Interactive PostgreSQL log tailer with auto-detection and color output |
+| [postern](https://github.com/willibrandon/postern) | Language server and checker for PostgreSQL configuration files |
 
 ## Installation
 
@@ -21,6 +22,7 @@ brew install scout
 brew install dotsider
 brew install dotsider-mcp
 brew install pgtail
+brew install postern
 ```
 
 Or install directly:
@@ -31,6 +33,7 @@ brew install willibrandon/tap/scout
 brew install willibrandon/tap/dotsider
 brew install willibrandon/tap/dotsider-mcp
 brew install willibrandon/tap/pgtail
+brew install willibrandon/tap/postern
 ```
 
 ## Upgrade
@@ -41,6 +44,7 @@ brew upgrade scout
 brew upgrade dotsider
 brew upgrade dotsider-mcp
 brew upgrade pgtail
+brew upgrade postern
 ```
 
 ## Supported Platforms
@@ -90,6 +94,15 @@ brew upgrade pgtail
 | Linux | arm64 | pgtail-linux-arm64 |
 | Linux | x86_64 | pgtail-linux-x86_64 |
 
+### postern
+
+| Platform | Architecture | Binary |
+|----------|--------------|--------|
+| macOS | Apple Silicon (arm64) | postern-VERSION-darwin-arm64 |
+| macOS | Intel (x86_64) | postern-VERSION-darwin-x64 |
+| Linux | arm64 | postern-VERSION-linux-arm64 |
+| Linux | x86_64 | postern-VERSION-linux-x64 |
+
 ## Troubleshooting
 
 ### macOS Gatekeeper Warning
@@ -103,6 +116,7 @@ xattr -d com.apple.quarantine $(which scout)
 xattr -d com.apple.quarantine $(which dotsider)
 xattr -d com.apple.quarantine $(which dotsider-mcp)
 xattr -d com.apple.quarantine $(which pgtail)
+xattr -d com.apple.quarantine $(which postern)
 ```
 
 ### Formula Issues
@@ -112,3 +126,4 @@ To report issues with this tap, please open an issue on the relevant repository:
 - [scout issues](https://github.com/willibrandon/scout/issues)
 - [dotsider issues](https://github.com/willibrandon/dotsider/issues)
 - [pgtail issues](https://github.com/willibrandon/pgtail/issues)
+- [postern issues](https://github.com/willibrandon/postern/issues)
