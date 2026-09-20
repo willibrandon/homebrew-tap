@@ -6,6 +6,7 @@ This tap provides Homebrew formulae for tools by [willibrandon](https://github.c
 
 | Formula | Description |
 |---------|-------------|
+| [chill](https://github.com/willibrandon/chill) | Terminal lofi radio with background playback and an interactive REPL |
 | [picket](https://github.com/willibrandon/picket) | Native AOT secrets scanner |
 | [scout](https://github.com/willibrandon/scout) | Feature-complete port of ripgrep to .NET Native AOT |
 | [dotsider](https://github.com/willibrandon/dotsider) | A TUI for analyzing .NET assemblies |
@@ -17,6 +18,7 @@ This tap provides Homebrew formulae for tools by [willibrandon](https://github.c
 
 ```bash
 brew tap willibrandon/tap
+brew install chill
 brew install picket
 brew install scout
 brew install dotsider
@@ -29,6 +31,7 @@ Or install directly:
 
 ```bash
 brew install willibrandon/tap/picket
+brew install willibrandon/tap/chill
 brew install willibrandon/tap/scout
 brew install willibrandon/tap/dotsider
 brew install willibrandon/tap/dotsider-mcp
@@ -40,6 +43,7 @@ brew install willibrandon/tap/postern
 
 ```bash
 brew upgrade picket
+brew upgrade chill
 brew upgrade scout
 brew upgrade dotsider
 brew upgrade dotsider-mcp
@@ -48,6 +52,18 @@ brew upgrade postern
 ```
 
 ## Supported Platforms
+
+### chill
+
+Includes mpv, yt-dlp, and Deno for YouTube playback. Use `brew upgrade chill`
+to update the package-managed installation.
+
+| Platform | Architecture | Binary |
+|----------|--------------|--------|
+| macOS | Apple Silicon (arm64) | chill |
+| macOS | Intel (x86_64) | chill |
+| Linux | arm64 | chill |
+| Linux | x86_64 | chill |
 
 ### picket
 
@@ -111,6 +127,7 @@ If you see "cannot be opened because the developer cannot be verified":
 
 ```bash
 xattr -d com.apple.quarantine $(which picket)
+xattr -d com.apple.quarantine $(which chill)
 xattr -d com.apple.quarantine $(which picket-tui)
 xattr -d com.apple.quarantine $(which scout)
 xattr -d com.apple.quarantine $(which dotsider)
@@ -122,6 +139,7 @@ xattr -d com.apple.quarantine $(which postern)
 ### Formula Issues
 
 To report issues with this tap, please open an issue on the relevant repository:
+- [chill issues](https://github.com/willibrandon/chill/issues)
 - [picket issues](https://github.com/willibrandon/picket/issues)
 - [scout issues](https://github.com/willibrandon/scout/issues)
 - [dotsider issues](https://github.com/willibrandon/dotsider/issues)
