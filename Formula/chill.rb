@@ -4,7 +4,7 @@
 class Chill < Formula
   desc "Terminal lofi radio with background playback and an interactive REPL"
   homepage "https://github.com/willibrandon/chill"
-  version "0.15.1"
+  version "0.15.2"
   license "MIT"
 
   depends_on "deno"
@@ -14,22 +14,22 @@ class Chill < Formula
   on_macos do
     on_arm do
       url "https://github.com/willibrandon/chill/releases/download/v#{version}/chill_#{version}_darwin_arm64.tar.gz"
-      sha256 "8f1ebe3681796e5786e0e9af4907c4f8ab07a0c5efae1442e2cf93632323f967"
+      sha256 "db54332d74c40ef33185bbbe46cf0e5da1dc14ae2039d7c3767110d7aaa68c79"
     end
     on_intel do
       url "https://github.com/willibrandon/chill/releases/download/v#{version}/chill_#{version}_darwin_amd64.tar.gz"
-      sha256 "3fdf3b5c3c132f7f166eb93541c9537bf0238fd16ade9a8a0931137425481b97"
+      sha256 "99981ae4313b7244980b76e13e9f36a1a3a5bfd9026b9c924b5b2c2ad2ee6276"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/willibrandon/chill/releases/download/v#{version}/chill_#{version}_linux_arm64.tar.gz"
-      sha256 "42a5a4f956c2d66149b3a12eb3771b7f8c8888807e7b092d4fd31e612019f6fa"
+      sha256 "cd741ff3285bca78da8d6c8b170ccd0774f1514621f8d733b04427d71f9854dc"
     end
     on_intel do
       url "https://github.com/willibrandon/chill/releases/download/v#{version}/chill_#{version}_linux_amd64.tar.gz"
-      sha256 "16c6af2bf0dabee0dcef51909993b92dad55c786a87631704698b27b612afea0"
+      sha256 "83be4b22df290dcaeda17842c0a54154813c2c645968696438b889882f3f233c"
     end
   end
 
