@@ -5,28 +5,28 @@
 class Postern < Formula
   desc "Language server and checker for PostgreSQL configuration files"
   homepage "https://github.com/willibrandon/postern"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/willibrandon/postern/releases/download/v#{version}/postern-#{version}-darwin-arm64"
-      sha256 "31e43e0a44b4fbcf5ae732da4d501246cad53c666d7147f8c70875a1e03c0a93"
+      sha256 "2c51011c69faa8a6bc92afe9801690036a29dc9d175163cfbdb011c12daec5df"
     end
     on_intel do
       url "https://github.com/willibrandon/postern/releases/download/v#{version}/postern-#{version}-darwin-x64"
-      sha256 "70443752bcfb068070f61bd3dcef7bbacce5f24d2c5887152721f1dde099ef66"
+      sha256 "884fc07d446f93fdc12a8ae0d75b4d7db6cbb1014e7293bed70f1b42ceadbbe8"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/willibrandon/postern/releases/download/v#{version}/postern-#{version}-linux-arm64"
-      sha256 "f0d42e91a8c41e7cbe1eb9adda04a20b3fa8977b7acb70f9f77ae63fbd25d805"
+      sha256 "33ace05c9085df33aa042a23815b21ae5c825ef0645799bdef36dddb58a65256"
     end
     on_intel do
       url "https://github.com/willibrandon/postern/releases/download/v#{version}/postern-#{version}-linux-x64"
-      sha256 "2b4fd0ee16cf71005f97c58bfa38f26fd2d63d5ef075d89d003c797ce13f1e24"
+      sha256 "b51be6e569dc28cc4a746781eb2073163759e9428ba447363fab8eb54297fec4"
     end
   end
 
